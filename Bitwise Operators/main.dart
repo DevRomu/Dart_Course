@@ -2,43 +2,27 @@ import 'dart:io';
 
 void main()
 {
-  int num1 = 10;
-  int num2  = 5;
+  int num1 = 55;
+  int num2 = 78;
 
-  // Addition +
-  print(num1 + num2);
+  // 128 64 32 16 8 4 2 1
+  // 0   0  1  1  0 1 1 1 - 55
+  // 0   1  1  1  1 1 1 1 - 78
+  // --------------------
+  // 0   0  0  0  1 1 1 1
 
-  // Subtraction -
-  print(num1 - num2);
+  // Bitwise AND &
+  print(num1 & num2);
 
-  // Multiplication *
-  print(num1 * num2);
+  // Bitwise OR |
+  print(num1 | num2);
 
-  // Division /
-  print(num1 / num2);
+  //Bitwise XOR ^
+  print(num1 ^ num2);
 
-  // Unary minus (negation) -
-  print(-num1);
+  //Bitwise Not ~
+  print(~num1);
 
-  //Integer division /
-  print(num1 ~/ num2);
-
-  //Modulus Operator %
-  print(num1 % num2);
-
-  //Increment ++
-  print(num1);
-  num1++; // num1 = num1 + 1 or num1 += 1;
-  print(num1);
-
-  //Increment --
-  print(num2);
-  num2--; // num1 = num1 - 1 or num1 -= 1;
-  print(num2);
-
-
-  int numExtra = 8;
-  print(numExtra++);
-  print(numExtra++);
-
+  //Left Shift <<
+  print(num1 < 3);
 }
