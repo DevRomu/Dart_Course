@@ -3,8 +3,12 @@ import 'dart:io';
 
 class Vehicle
 {
-
  int maxSpeed = 60;
+ Vehicle(int speed)
+ {
+  print("Hello");
+  maxSpeed = speed;
+ }
 
  void Drive()
  {
@@ -14,8 +18,9 @@ class Vehicle
 
 void main()
 {
- Vehicle v1 = new Vehicle();
- Vehicle v2 = new Vehicle();
+ Vehicle v1 = new Vehicle(100);
+ Vehicle v2 = new Vehicle(20);
+
  v1.Drive();
  print(v1.maxSpeed);
  v1.maxSpeed = 100;
